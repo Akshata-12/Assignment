@@ -1,6 +1,4 @@
-html {
-    background-color: #f5f7f2;
-}
+
 
 body {
     font-family: Tahoma, sans-serif;
@@ -8,40 +6,41 @@ body {
 }
 
 .container {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #FFF;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 1024px;
+    margin: 0 auto;
     box-sizing: border-box;
 }
 
+.title { float: left; }
+.search-form { float: right; margin-top: 5px; }
+
 header {
-    padding-top: 20px;
+    padding-top: 10px;
     color: #1f08f1;
 }
 header h1 {
-    margin: 0;
+    margin:  0 0 20px 0;
     font-weight: normal;
 }
 header p {
     margin: 0;
 }
-.container input[type=text] {
+.form-input {
     float: right;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
+    height: 30px;
+    border-radius: 4px;
+    margin-right: 4px;
+    box-shadow: 0px 5px 10px #ccc inset;
   }
   .search-btn {
      background: url("../Images/search-icon.png") no-repeat;
+     background-position: center center;
     background-color: #2184f9; 
     float: right;
-    padding: 5px 10px;
-    margin-top: 10px;
+    padding: 5px;
+    width: 40px;
+
+    height: 30px;
   border: none;
    
     
@@ -67,6 +66,7 @@ header p {
   
 /* Site Navigation */
 .site-nav {
+  border-radius: 15px;
     background-color: rgb(59, 12, 170);
     overflow: hidden;
   }
@@ -81,7 +81,7 @@ header p {
 
 
 .site-nav a:hover {
-    background-color:#ddd;
+    background-color:#f17807;
     color: black;
   }
   .site-nav a.active {
@@ -123,11 +123,18 @@ img {
     cursor: pointer;
   }
   
-  .button1 {
-    background-color: #6E9E73; 
-    color: white; 
-    }
-  
+  .column{
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+  }  
   .button1:hover {
     background-color: grey;
     color: white;
@@ -192,11 +199,7 @@ footer {
   padding: 0;
   box-sizing: border-box;
 }
-.container {
-  max-width: 1170px;
-  background-color: #eff0f3;
-  margin: auto;
-}
+
 .row{
   display: flex;
   flex-wrap: wrap;
@@ -236,5 +239,6 @@ width: 50px;
   .footer-col ul li a{
     font-size: 16px;
     text-transform: capitalize;
+    font-display: white;
     color: #6f52da;
   }

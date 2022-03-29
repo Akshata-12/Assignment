@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="CSS/Design.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/Design.css">
@@ -12,9 +12,17 @@
 <body>
     <div class="container">
     <header>
-        <h1> Website Title </Title>
-            <input type="text" placeholder="Search..">
-       <button class="search-btn"></button>
+        <div class="title">
+          <h1> Website Title </h1>
+        </div>
+        <div class="search-form">
+            <from action="" method="post">
+              <button class="search-btn"></button>
+              <input type="text" class="form-input" placeholder="Search..">
+              
+            </from>
+        </div>
+        <div style="clear: both;"></div>
             <nav class="site-nav">
                 <a class="active" href="#home">Home</a>
     <a href="#about">About</a>
@@ -26,28 +34,35 @@
     
         </header>
 
-
-<div class="clearfix">
-  <div class="box" style="background-color: #FFF">
-    <i class="material-icons">Settings</i>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora amet nulla modi ad nihil. Hic laboriosam culpa error corrupti repellat, iusto animi officia exercitationem ut perferendis reprehenderit molestiae non aliquam!</p>
-  <button class="button button1">Read More</button>
-</div>
-<i class="material-icons">News</i>
-  <div class="box" style="background-color: #FFF">
-  <p>Duis autem vei eum iriure dolorin hendrerit in vulputate velit esse molestiae consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui landit praesent luptatum zzril delenit augue duis doloe te feugait nulla facilisis</p>
-  <button class="button button2">Read More</button>
-</div>
-<i class="material-icons">Blog</i>
-  <div class="box" style="background-color: #FFF">
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad possimus iusto, debitis ex, aliquam consequuntur veniam consequatur libero est eius mollitia, odio repellat necessitatibus corrupti suscipit odit harum laboriosam quidem.</p>
-  <button class="button button3">Read More</button>  
-</div>
-<i class="material-icons">Photo</i>
-  <div class="box" style="background-color: #FFF">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad possimus iusto, debitis ex, aliquam consequuntur veniam consequatur libero est eius mollitia, odio repellat necessitatibus corrupti suscipit odit harum laboriosam quidem.</p>
-    <button class="button button4">Read More</button>    
-</div>
+        <div class="clearfix">
+        <div class="row">
+          <div class="column" style="background-color:#FFF;">
+            <i class="material-icons">settings</i>
+            
+            <h2>Settings</h2>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora amet nulla modi ad nihil. Hic laboriosam culpa error corrupti repellat, iusto animi officia exercitationem ut perferendis reprehenderit molestiae non aliquam!</p>
+            <button class="button button1">Read More</button>
+          </div>
+          <div class="column" style="background-color:#FFF;">
+            <i class="material-icons">language</i>
+            <h2>News</h2>
+            <p>Duis autem vei eum iriure dolorin hendrerit in vulputate velit esse molestiae consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui landit praesent luptatum zzril delenit augue duis doloe te feugait nulla facilisis</p>
+            <button class="button button2">Read More</button>
+          </div>
+          <div class="column" style="background-color:#FFF;">
+            <i class="material-icons">forum</i>
+            <h2>Blog</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad possimus iusto, debitis ex, aliquam consequuntur veniam consequatur libero est eius mollitia, odio repellat necessitatibus corrupti suscipit odit harum laboriosam quidem.</p>
+            <button class="button button3">Read More</button>  
+          </div>
+          <div class="column" style="background-color:#FFF;">
+            <i class="material-icons">photo</i>
+            <h2>Photo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad possimus iusto, debitis ex, aliquam consequuntur veniam consequatur libero est eius mollitia, odio repellat necessitatibus corrupti suscipit odit harum laboriosam quidem.</p>
+            <button class="button button3">Read More</button> 
+          </div>
+        </div>
 </div>
         <footer class="footer">
           <div class="container">
